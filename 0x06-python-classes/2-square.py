@@ -1,22 +1,16 @@
 #!/usr/bin/python3
-"""Square module definition.
-This module defines a simple `Square` class
+"""Definition.
+Defines a square
 """
 
 
 class Square:
-    """A simple ``Square`` class
-    Attributes:
-        size (`int`): The size of the ``Square``.
+    """A square representation
     """
     def __init__(self, size=0):
-        """Constructs a ``Square`` objet
+        """Initialize a square
         Args:
             size (`int`): The size of the ``Square``.
-                The default value is 0.
-        Raises:
-            TypeError: If ``size`` is not an integer.
-            ValueError: If ``size`` < 0
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
