@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-
-def safe_print_division(a,b):
-    quotient = 0
+def safe_print_division(a, b):
+    total = 0
     try:
-        quotient = a/b
+        total = a / b
+        return total
     except ZeroDivisionError:
-        quotient = None
-    except TypeError:
-        quotient = None
+        total = None
+        return total
     finally:
-        print('Inside result: {}'.format(quotient))
-    return quotient
+        print("Inside result: {}".format(total))
